@@ -29,34 +29,44 @@ namespace DeliverableOne
                     Console.WriteLine("the lowest number is {0}", dollaramount1);
                     if (dollaramount2 < dollaramount3)
                     {
-                    }
-                    else
-                    {
-
+                        Console.WriteLine("The highest number is {0}", dollaramount3);
                     }
 
                 }
                 else if (dollaramount2 < dollaramount1 && dollaramount2 < dollaramount3)
                 {
-                    Console.WriteLine("the lowest number is {0}", dollaramount2);
+                    Console.WriteLine("The lowest number is {0}", dollaramount2);
+                    if (dollaramount1 < dollaramount3)
+                    {
+                        Console.WriteLine("The highest number is {0}", dollaramount3);
 
+                    }
+                    else if (dollaramount3 < dollaramount1 && dollaramount3 < dollaramount2)
+                    {
+                        Console.WriteLine("The lowest number is {0}", dollaramount3);
+                        if (dollaramount2 < dollaramount3)
+                        {
+                            Console.WriteLine("The highest number is {0}", dollaramount1);
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("The values are equal!");
+
+                        }
+
+                        //Show output in requested formats
+
+                        Console.WriteLine("The total in the various currencies are:");
+                        Console.WriteLine(total.ToString("C3", CultureInfo.CurrentCulture));
+                        Console.WriteLine(total.ToString("C3", CultureInfo.CreateSpecificCulture("da-DK"));
+                        Console.WriteLine(total.ToString("C3", CultureInfo.CreateSpecificCulture("ja-JP"));
+                        Console.WriteLine(total.ToString("C3", CultureInfo.CreateSpecificCulture("th-TH"));
+
+
+                    }
                 }
-                else if (dollaramount3 < dollaramount1 && dollaramount3 < dollaramount1)
-                {
-                    Console.WriteLine("the lowest number is {0}", dollaramount3);
-
-                }
-                else
-                {
-                    Console.WriteLine("The values are equal");
-
-                }
-
-                //Show output in requested formats
-
-
             }
         }
     }
 }
-
