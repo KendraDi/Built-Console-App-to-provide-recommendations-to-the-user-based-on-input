@@ -2,4 +2,4 @@
 
 
 
-Console app: Takes in input from the user and gives feedback to the user based on multiple entries (employ conditional statements)
+Console app: Takes in input from the user, prompts user with multiple options, takes input, displays message back to user (utilizing conditional statements)
